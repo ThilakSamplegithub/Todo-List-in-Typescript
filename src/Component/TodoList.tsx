@@ -6,9 +6,9 @@ interface TodoType {
 }
 type Props = {
   el: TodoType;
-  handleStatus: any;
-  handleDelete: any;
-  handleEdit: any;
+  handleStatus: (id:TodoType['id'])=>void;
+  handleDelete: (id:TodoType['id'])=>void;
+  handleEdit: (updateValue:TodoType['task'],id:TodoType['id'])=>void;
 };
 const TodoList = ({ el, handleStatus, handleDelete, handleEdit }: Props) => {
   const { task, id, isStatus } = el;
@@ -26,7 +26,7 @@ const TodoList = ({ el, handleStatus, handleDelete, handleEdit }: Props) => {
       style={{
         display: "flex",
         justifyContent: "space-between",
-        border: "1px solid",
+        border: "0px solid",
         margin: 10,
         boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"
       }}

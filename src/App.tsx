@@ -36,7 +36,7 @@ function App() {
   }
   return (
     <div style={{border:'1px solid red',height:'100vh'}}>
-      <div style={{margin:'auto',border:'1px solid',width:'50%',display:'flex',flexDirection:'column',height:'100%',justifyContent:'space-between'}}>
+      <div style={{margin:'auto',border:'0px solid',width:'50%',display:'flex',flexDirection:'column',height:'100%',justifyContent:'space-between'}}>
       <h1 style={{backgroundColor:'red',textAlign:'center'}}>Todo List</h1>
       {/* All list */}
       <div style={{flexGrow:1}}>
